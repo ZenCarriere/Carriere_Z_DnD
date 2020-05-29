@@ -1,2 +1,2 @@
-# Carriere_Z_DnD
-Repository for zen's drag and drop
+# My awesome drag and drop project
+Repository for zen's drag and drop project
