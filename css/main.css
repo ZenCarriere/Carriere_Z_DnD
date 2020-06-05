@@ -37,11 +37,33 @@ body {
 .puzzle-pieces img:nth-child(odd) { margin-left: auto }
 
 /* arrange the puzzle pieces on the board */
+.tl, .bl
+{
+	text-align:right;
+}
 
+.br img, .bl img {top:0;}
+
+.tl img , .bl img{right:0;}
+
+.drop-zone img 
+{
+	position: absolute;
+	bottom: 0;
+	padding:0;
+	margin:0;
+	width:auto;
+}
 
 
 /* set up drop zones */
-
+.drop-zone {
+	width: 49.5%;
+	height: 49.5%;
+	border: thin dashed white;
+	float: left;
+	position: relative;
+}
 
 
 /* end board styles */
