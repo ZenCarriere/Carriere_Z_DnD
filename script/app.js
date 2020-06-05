@@ -5,11 +5,16 @@
 		dropZones = document.querySelectorAll(".drop-zone"),
 		gameBoard = document.querySelector(".puzzle-board");
 
+		let imageNames = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
+
 
 
 	function changeImageSet() {
 		// change all the image elements on the page -> draggable image sources,
 		// and set the drop zone background
+		imageNames.forEach((piece, index) => {
+			puzzlePieces[index].src = `images/${piece + this.dataset.bgkey}.jpg`
+		});
 
 		gameBoard.style.backgroundImage = `url(images/backGround${this.dataset.bgkey}.jpg)`;
 	}
