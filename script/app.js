@@ -31,11 +31,24 @@
 	}
 
 	function allowDrop(event){
+
+		if(event.target.childElementCount != 0 || event.target.clientWidth < 297)
+		{
+			let returnImage = event.dataTransfer.getData("draggedImg");
+
+			console.log('one at a time')
+			return 0;
+		}
+		else
+		{
 		console.log('dropped something on me');
 
 		let droppedImage = event.dataTransfer.getData("draggedImg");
 
+
 		event.target.appendChild(document.querySelector(`#${droppedImage}`));
+	}
+
 
 	}
 
