@@ -14,9 +14,7 @@
 		// and set the drop zone background
 
 
-		dropZones.forEach((index) => {
-			dropZones.removeChild(puzzlePieces[index]);
-		});
+		 
 
 
 		imageNames.forEach((piece, index) => {
@@ -25,6 +23,15 @@
 		});
 
 		gameBoard.style.backgroundImage = `url(images/backGround${this.dataset.bgkey}.jpg)`;
+
+
+		dropZones.forEach((index) => {
+			
+			if(dropZones[index]) {
+			dropZones[index].removeChild();
+			}
+		
+		 });
 	}
 
 	function allowDrag(event) {
