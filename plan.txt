@@ -1,0 +1,10 @@
+Problem 1-
+the problem is that there is no way to prevent an image from overlapping one already in place.
+
+solution:
+creating an if statement that checks if there is an image already in the drop zone, and if there is prevent the new one from dropping.
+
+Problem 2-
+the problem is that the puzzle pieces carry over from one puzzle to the next
+
+solution:

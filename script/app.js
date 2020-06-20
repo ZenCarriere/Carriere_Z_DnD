@@ -12,8 +12,16 @@
 	function changeImageSet() {
 		// change all the image elements on the page -> draggable image sources,
 		// and set the drop zone background
+
+
+		dropZones.forEach((index) => {
+			dropZones.removeChild(puzzlePieces[index]);
+		});
+
+
 		imageNames.forEach((piece, index) => {
 			puzzlePieces[index].src = `images/${piece + this.dataset.bgkey}.jpg`
+
 		});
 
 		gameBoard.style.backgroundImage = `url(images/backGround${this.dataset.bgkey}.jpg)`;
@@ -34,7 +42,6 @@
 
 		if(event.target.childElementCount != 0 || event.target.clientWidth < 297)
 		{
-			let returnImage = event.dataTransfer.getData("draggedImg");
 
 			console.log('one at a time')
 			return 0;
