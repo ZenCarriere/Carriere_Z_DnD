@@ -8,3 +8,4 @@ Problem 2-
 the problem is that the puzzle pieces carry over from one puzzle to the next
 
 solution:
+creating some way to remove pieces from the drop zones and place them back in the drag zone
